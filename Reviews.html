@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews and Ratings</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0FFF0
+        }
+
+        header {
+            background-color: #008080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Page-specific styles */
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Container for the Game images */
+        .image-container {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        /* Container for the user images */
+        .User-image-container img {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        /* Styling for each game */
+        .game-image {
+            flex: 1; 
+            margin-right: 10px; 
+            text-align: center; 
+        }
+
+        /* Styling for the stars */
+        .stars {
+            font-size: 24px;
+        }
+
+        /* Optional: Adjust the spacing between elements */
+        .game-image img {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+
+        /* Example styles for the Twitch player */
+        #twitch-embed {
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Wave</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Reviews.html">Reviews & Ratings</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Best Rated -->
+        <h2>Best Rated</h2>
+        <div class="image-container">
+            <!-- Game 1 -->
+            <div class="game-image">
+                <h2>The Last of Us: Part 2</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\TLOUp2.jpg" alt="Game 1" Width="200" height="300">
+                <p>Amazing storytelling, emotional rollercoaster, and jaw-dropping graphics.</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-image">
+                <h2>Prince of persia: the lost crown</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\POP.jpg" alt="Game 2" Width="200" height="300">
+                <p>Perfect mix of combat, platforming, parkour, and puzzling</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+
+               <!-- Game 3 -->
+            <div class="game-image">
+                <h2>Paper Mario</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\PM.jpg" alt="Game 3" Width="160" height="200">
+                <p>The story is funny, the gameplay varied, and the world so charming, you'll want to explore every last corner of it</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Worst Rated -->
+        <h2>Worst Rated</h2>
+        <div class="image-container">
+            <!-- Game 1 -->
+            <div class="game-image">
+                <h2>Lord of the Rings: Golum</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\LOTR.jpg" alt="Game 4" Width="200" height="300">
+                <p>A derivative, uninteresting and fundamentally broken stealth action adventure</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-image">
+                <h2>Redfall</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\RED.jpg" alt="Game 5" Width="200" height="300">
+                <p>Its performance is regularly dire, plagued with pop-in, stutters, and a long list of display bugs.</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+
+               <!-- Game 3 -->
+            <div class="game-image">
+                
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\CNW.jpg" alt="Game 6" Width="200" height="300">
+                <p>Clive ‘N’ Wrench stands out for all the wrong reasons. From terrible controls to poor visuals and performance</p>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</main>
+    <footer>
+        <p>&copy; 2024 Game Wave</p>
+    </footer>
+</body>
+</html>

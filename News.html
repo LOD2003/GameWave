@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0FFF0
+        }
+
+        header {
+            background-color: #008080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Page-specific styles */
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Container for the Game images */
+        .image-container {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        /* Container for the user images */
+        .User-image-container img {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        /* Styling for each game */
+        .game-image {
+            flex: 1; 
+            margin-right: 10px; 
+            text-align: center; 
+        }
+
+        /* Optional: Adjust the spacing between elements */
+        .game-image img {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+
+        /* Example styles for the Twitch player */
+        #twitch-embed {
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Wave</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Reviews.html">Reviews & Ratings</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Best Rated -->
+        <h2>Popular Tournaments</h2>
+        <div class="image-container">
+            <!-- Tournament 1 -->
+            <div class="game-image">
+                <h2>PUBG Mobile Global Championship 2024</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\pubg.jpg" alt="Tournament 1" Width="500" height="500">
+                <p>The ultimate PUBG Mobile competition</p>
+            </div>
+
+            <!-- Tournament 2 -->
+            <div class="game-image">
+                <h2>Valorant Champions Tour 2024</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\val.jpg" alt="Tournament 2" Width="500" height="500">
+                <p>A series of Valorant tournaments culminating in the grand finals.</p>
+            </div>
+
+               <!-- Tournament 3 -->
+            <div class="game-image">
+                <h2>Six Invitational 2024</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\R6.jpg" alt="Tournament 3" Width="500" height="500">
+                <p>The premier Rainbow Six Siege tournament where the best teams from around the world compete.</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- News -->
+        <h2>News</h2>
+        <div class="image-container">
+            <!-- News 1 -->
+            <div class="game-image">
+                <h2>Gaming Sales Down says AMD</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\consoles.jpg" alt="News" Width="700" height="700">
+                <p>As the gaming world looks doomed to a quiet year in 2024, chip company AMD has highlighted a significant drop in demand.
+With sales of the PlayStation 5, Xbox Series X and Nintendo Switch on the decline, the entire games industry feels like it’s primed for a slump over the next year; especially as there are so few big name games scheduled for the second half of 2024.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Slide show -->
+<h2>Sneak Peak of upcoming games</h2>
+<div class="mySlides"><img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\Mow.jpg" alt="Game 1" Width="1900" height="800">
+</div>
+<div class="mySlides"><img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\Ingresion.jpg" alt="Game 2" Width="1900" height="800">
+</div>
+<div class="mySlides"><img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\seal.jpg" alt="Game 3" Width="1900" height="800">
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000); 
+}
+</script>
+</body>
+</main>
+    <footer>
+        <p>&copy; 2024 Game Wave</p>
+    </footer>
+</body>
+</html>

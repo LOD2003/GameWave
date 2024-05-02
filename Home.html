@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0FFF0
+        }
+
+        header {
+            background-color: #008080;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Page-specific styles */
+        main {
+            padding: 2rem;
+        }
+
+        footer {
+            background-color: #008080;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Container for the Game images */
+        .image-container {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        /* Container for the user images */
+        .User-image-container img {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        /* Styling for each game */
+        .game-image {
+            flex: 1; 
+            margin-right: 10px; 
+            text-align: center; 
+        }
+
+        /* Styling for the stars */
+        .stars {
+            font-size: 24px;
+        }
+
+        /* Optional: Adjust the spacing between elements */
+        .game-image img {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+
+        /* Example styles for the Twitch player */
+        #twitch-embed {
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game Wave</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Reviews.html">Reviews & Ratings</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Top Games -->
+        <h2>Top Games</h2>
+        <div class="image-container">
+            <!-- Game 1 -->
+            <div class="game-image">
+                <h2>The Last of Us: Part 2</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\TLOUp2.jpg" alt="Game 1" Width="200" height="300">
+                <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-image">
+                <h2>Prince of persia: the lost crown</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\POP.jpg" alt="Game 2" Width="200" height="300">
+                    <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+
+               <!-- Game 3 -->
+            <div class="game-image">
+                <h2>Paper Mario</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\PM.jpg" alt="Game 3" Width="160" height="200">
+                    <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top News -->
+        <h2>Top News</h2>
+        <div class="image-container">
+            <!-- News 1 -->
+            <div class="game-image">
+                <h2>How Online Gaming Has Become a Social Lifeline</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\SL.jpg" alt="News 1" Width="500" height="500">
+                <p>With the rise of social media, gamers – particularly in Gen Z – have perfected the art of building communities in and around video games. Gamers don’t just compete with strangers on the internet; they forge genuine, enduring friendships.....</p>
+                <div class="stars">
+                    <span class="star"></span>
+                </div>
+            </div>
+<!-- News 2 -->
+            <div class="game-image">
+<h2>The Rise of Social Gaming Communities</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\GC.png" alt="News 2" Width="500" height="500">
+                <p>With the rise of social media, gamers – particularly in Gen Z – have perfected the art of building communities in and around video games. Gamers don’t just compete with strangers on the internet; they forge genuine, enduring friendships...</p>
+                <div class="stars">
+                    <span class="star"></span>
+                </div>
+            </div>
+            <!-- News 3 -->
+            <div class="game-image">
+                <h2>Explosive Growth During the Pandemic</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\US.jpeg" alt="News 3" Width="400" height="200">
+                <p>When shelter-in-place orders came down, millions of people around the world turned to tech-fueled diversions to stay in touch with family and friends. Video games played a significant role in this. Games like Among Us, which has been downloaded by over 100 million people, and the Jackbox party games that mix video chatting with elements of classics....</p>
+                <div class="stars">
+                    <span class="star"></span>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+<!-- Top Chats -->
+        <h2>Top Chats</h2>
+        <div class="image-container">
+            <!-- Chat 1 -->
+            <div class="game-image">
+                <h2>The Last of Us Chat</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\tlou.jpg" alt="Chat 1" Width="300" height="300">
+                <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+
+            <!-- Chat 2 -->
+            <div class="game-image">
+                <h2>Prince of persia Chat</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\popp.jpg" alt="Chat 2" Width="300" height="300">
+                    <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+
+               <!-- Chat 3 -->
+            <div class="game-image">
+                <h2>Paper Mario Chat</h2>
+                <img src="C:\Users\lewis.o'donnell\OneDrive - Global Energy Group\Documents\Lewis Stuff\Edinburgh Napier Work\Web technologies\Website\PMC.png" alt="Chat 3" Width="300" height="300">
+                    <div class="stars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</main>
+    <footer>
+        <p>&copy; 2024 Game Wave</p>
+    </footer>
+</body>
+</html>
